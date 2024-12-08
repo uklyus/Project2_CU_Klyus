@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма с точками</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .submit-button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Укажите точки</h2>
+        <form method="post">
+            <div class="form-group">
+                <label for="point_start" class="form-label">Стартовая точка</label>
+                <input type="text" class="form-input" name="point_start" id="point_start" placeholder="Введите стартовую точку">
+            </div>
+            <div class="form-group">
+                <label for="point_end" class="form-label">Конечная точка</label>
+                <input type="text" class="form-input" name="point_end" id="point_end" placeholder="Введите конечную точку">
+            </div>
+            <button type="submit" class="submit-button">Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
